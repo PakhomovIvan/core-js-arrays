@@ -39,11 +39,17 @@ function getIntervalArray(start, end) {
  */
 
 function sumArrays(/* arr1, arr2 */) {
-  // const arr3 = [];
-  // for (let i = 0; i < arr1.length; i += 1) {
-  //   arr3.push(arr1[i] + arr2[i]);
+  // let difference = arr1.length - arr2.length;
+  // difference = Math.abs(difference);
+  // if (arr1.length < arr2.length) {
+  //   for (let i = 0; i < difference; i += 1) {
+  //     arr1.push(0);
+  //   }
+  // } else if (arr1.length > arr2.length) {
+  //   for (let i = 0; i < difference; i += 1) {
+  //     arr2.push(0);
+  //   }
   // }
-  // return arr3;
   // return arr2.map((num, i) => num + arr1[i]);
   throw new Error('Not implemented');
 }
@@ -94,12 +100,12 @@ function findAllOccurrences(/* arr, item */) {
  *    removeFalsyValues([ 1, 2, 3, 4, 5, 'false' ]) => [ 1, 2, 3, 4, 5, 'false' ]
  *    removeFalsyValues([ false, 0, NaN, '', undefined ]) => [ ]
  */
-function removeFalsyValues(/* arr */) {
+function removeFalsyValues(arr) {
   // const arrResult = arr.filter(
   //   (e) => e === e && e !== false && e !== 0 && e !== ''
   // );
   // return arrResult;
-  throw new Error('Not implemented');
+  return arr.filter(Boolean);
 }
 
 // console.log(removeFalsyValues([ 0, false, 'cat', NaN, true, '' ]))
